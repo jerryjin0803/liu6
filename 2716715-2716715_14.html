@@ -1,0 +1,932 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head><meta name="referrer" content="no-referrer-when-downgrade">
+<!-- 启用极速模式(webkit) -->
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="KeyWords" content="新闻详情">
+<meta name="description" content="新闻详情">
+<title>新闻详情</title>
+<link rel="shortcut icon" type="image/x-icon" href="img/upimages/favicon.ico" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<meta name='apple-touch-fullscreen' content='yes' />
+<meta name="full-screen" content="yes">
+<!-- SEO友好提示 -->
+<meta name="applicable-device" content="pc,mobile">
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/comm/html5shiv.js"></script>
+<script type="text/javascript" src="/js/comm/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/comm/jquery.min.js"></script>
+<script type="text/javascript" src="js/comm/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="js/comm/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/comm/ubox.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/comm/wow.js" charset="utf-8"></script>
+                <script type="text/javascript" src="js/comm/alert.js" charset="utf-8"></script>
+       <script type="text/javascript" src="js/02716715.js?1566379414" charset="utf-8"></script>
+<link rel="stylesheet" type="text/css" href="css/comm/font/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="css/comm/animate.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/comm/box.css"/>
+<link rel="stylesheet" type="text/css" href="css/comm/alert.css"/>
+<link rel="stylesheet" type="text/css" href="css/02716715.css?1566379414"/>
+<script>
+    
+	var batchArr = [];
+	var checkLoad = 0;//判断是否是回调完成的
+</script>
+<script>
+    var isOpenMobie = 2;
+    var isOpenPad = 2;
+    if(isOpenMobie == 1){
+        if(isOpenPad == 1){
+            $("body").css("width","auto");
+        }else{
+            //是否手机端判断
+            var ua = navigator.userAgent;
+            var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+                isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+                isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+                isMobile = isIphone || isAndroid;
+            if(isMobile){
+                $("body").css("width","1280px");
+            }else{
+                $("body").css("width","auto");
+            }
+        }
+    }else{
+        $("body").css("width","auto");
+        $("head").append("<meta id='headScreen' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport' />");
+    }
+
+    //手机屏幕尺寸兼容 purewinter 2019-03-26
+    $(window).load(function(){
+        bodyScale();
+    });
+    function bodyScale(){
+        var windowWidth = $(window).width();
+        $("#bodyScale").remove();
+        if(windowWidth < 680){
+            var scale = windowWidth / 375;
+            $("#headScreen").remove();
+            $("head").append("<meta id='headScreen' content='width=375, initial-scale="+scale+", maximum-scale="+scale+", user-scalable=no' name='viewport' />");
+        }else if(windowWidth < 960){
+            var scale = windowWidth / 960;
+            $("#headScreen").remove();
+            $("head").append("<meta id='headScreen' content='width=960, initial-scale="+scale+", maximum-scale="+scale+", user-scalable=no' name='viewport' />");
+        }
+    }
+
+$(window).load(function(){
+	if (!(/msie [6|7|8|9]/i.test(navigator.userAgent))){
+		setTimeout(function(){
+			new WOW().init()
+		},150)
+	};
+});
+var DIY_WEBSITE_ID = "63895";
+var DIY_JS_SERVER = "box6js.nicebox.cn";
+var DIY_CUR_URL = "http://box6.nicebox.cn/sysTools.php?mod=diy&act=publishPages&page=1&isphp=0&mainHtml=2&imgLoadLate=2&mipSet=0&productHtml=2&newsHtml=2";
+
+</script>
+<script src="//box6js.nicebox.cn/exusers/login_html_v9_diy.php?idweb=63895&langid=0&UPermission=all"></script>
+</head>
+<body>
+	<script type="text/javascript">var Default_isFT = 0;</script>
+<script type="text/javascript" src="js/comm/transform.js?201603091"></script>
+			<div id="comm_layout_header" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div class="view_contents">
+								<div id="image_logo_1562031595252" class="view logo image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="image" class="view_contents" >
+					<div class="logoStyle modSet">
+	
+
+<a href='index.html' target="_self"><img class="imgSet" src="img/logo.png?1566379414" title="" alt="" style="width:auto; height:100%; margin-left:0px"/></a>
+
+
+</div>				</div>
+			</div>
+					<div id="dh_style_28_1562032876601" class="view style_28 dh  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="dh" class="view_contents" >
+					
+<div id="menu" class="menu menuStyle_28">
+	<div class="menuLayout">
+		<ul class="miniMenu columnSet showmobile">
+			<li class="leftBox">
+				<div class="nav"></div>
+				<div class="sidebar icoMenuSet"><i class="fa fa-navicon" onclick="setDhListen('style_01',this)"></i></div>
+				<div class="menuScroll">
+					<ul class="menuUlCopy">
+						
+						 
+							 
+								<li class="rflex" pageid="2716705" showmobile=""><a class="mainMenuSet" href="index.html">
+							
+
+								
+
+								首页</a>
+							
+								
+								 
+								</li>
+								
+						
+						 
+							 
+								<li class="rflex" pageid="2716707" showmobile=""><a class="mainMenuSet" href="2716707-2716707.html">
+							
+
+								
+
+								景区介绍</a>
+							
+								
+								 
+								</li>
+								
+						
+						 
+							 
+								<li class="rflex" pageid="2716709" showmobile=""><a class="mainMenuSet" href="2716709-2716709.html">
+							
+
+								
+
+								旅游攻略</a>
+							
+								
+								 
+								</li>
+								
+						
+						 
+							 
+								<li class="rflex" pageid="2716711" showmobile=""><a class="mainMenuSet" href="2716711-2716711.html">
+							
+
+								
+
+								游记</a>
+							
+								
+								 
+								</li>
+								
+						
+						 
+							 
+								<li class="rflex" pageid="2716713" showmobile=""><a class="mainMenuSet" href="2716713-2716713.html">
+							
+
+								
+
+								关于我们</a>
+							
+								
+								 
+								</li>
+								
+						
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="menuUl_box columnSet showpc">
+			<ul class="menuUl dflex maxWidth ">
+				
+				
+				 
+					
+						<li class="rflex isLi" pageid="2716705" showpc="">
+					
+				
+						
+						
+							
+							<a class="mainMenuSet Nosub" href="index.html">
+							
+								
+								首页
+								
+								
+							</a>
+						
+							
+					 
+						</li>
+					
+				
+				
+				 
+					
+						<li class="rflex isLi" pageid="2716707" showpc="">
+					
+				
+						
+						
+							
+							<a class="mainMenuSet Nosub" href="2716707-2716707.html">
+							
+								
+								景区介绍
+								
+								
+							</a>
+						
+							
+					 
+						</li>
+					
+				
+				
+				 
+					
+						<li class="rflex isLi" pageid="2716709" showpc="">
+					
+				
+						
+						
+							
+							<a class="mainMenuSet Nosub" href="2716709-2716709.html">
+							
+								
+								旅游攻略
+								
+								
+							</a>
+						
+							
+					 
+						</li>
+					
+				
+				
+				 
+					
+						<li class="rflex isLi" pageid="2716711" showpc="">
+					
+				
+						
+						
+							
+							<a class="mainMenuSet Nosub" href="2716711-2716711.html">
+							
+								
+								游记
+								
+								
+							</a>
+						
+							
+					 
+						</li>
+					
+				
+				
+				 
+					
+						<li class="rflex isLi" pageid="2716713" showpc="">
+					
+				
+						
+						
+							
+							<a class="mainMenuSet Nosub" href="2716713-2716713.html">
+							
+								
+								关于我们
+								
+								
+							</a>
+						
+							
+					 
+						</li>
+					
+				
+				
+			</ul>
+			
+			<div class="subBox">
+				<div class="subBoxContent maxWidth">
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+<!-- 菜单区域 End-->
+<!-- 导航栏目有下级时禁止跳转 -->
+<!-- 二级菜单宽度自适应 -->
+
+
+<!--  -->
+<!--<script src="//box6js.nicebox.cn/exusers/login_html_v9_diy.php?idweb=63895"></script>
+<script src="//box6js.nicebox.cn/exusers/login_html_v9.php?idweb=63895"></script>-->
+<script>
+function navSwtich(obj) {
+	$(obj).siblings(".menuUlCopy").slideToggle(200);
+	$(obj).parent().siblings().find(".menuUlCopy").slideUp(200);
+}
+function subLeft_dh_style_28_1562032876601(){
+	$("#dh_style_28_1562032876601 .menuUl>li").each(function(){
+		$(this).find(".menuUl03").css("left",'100%');
+	})
+}
+$(window).resize(function() {
+	subLeft_dh_style_28_1562032876601();
+})
+$(function(){
+	$("#dh_style_28_1562032876601 .fa-navicon").click(function(){
+		$("#dh_style_28_1562032876601 .menuUlCopy").each(function(){
+			$(this).siblings(".fa").show();
+		})
+	})
+	subLeft_dh_style_28_1562032876601();
+		$("#dh_style_28_1562032876601 .subBox").css("top",$("#dh_style_28_1562032876601 .menuUl_box").height());
+		
+	if($("#dh_style_28_1562032876601 .menuUl").hasClass("noHover")){
+		var tabNum = 0;
+		$("#dh_style_28_1562032876601 .menuUl>li").find(".Onsub").each(function(){
+			tabNum += 1;
+			$(this).parent().attr("tabNum",tabNum)
+		})
+		$("#dh_style_28_1562032876601 .menuUl>li .Onsub").mouseover(function(){
+			$("#dh_style_28_1562032876601 .subBox").show();
+			var index = $(this).parent().attr("tabNum");
+			$("#dh_style_28_1562032876601 .subBox .subItems").eq(index-1).fadeIn(200).siblings().hide();
+		})
+		$("#dh_style_28_1562032876601 .subBox").mouseleave(function(){
+			$(this).hide();
+		})
+		$("#dh_style_28_1562032876601 .menuUl>li .Nosub").mouseover(function(){
+			$("#dh_style_28_1562032876601 .subBox").hide();
+		})
+	}
+})
+</script>
+
+
+
+
+
+				</div>
+			</div>
+						</div>
+			</div>
+					<div id="layout_diy_1484042021" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div class="view_contents">
+								<div id="newsDetail_style_01_1506318095542" class="view style_01 newsDetail  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="newsDetail" class="view_contents" >
+					<script>
+$(function() {
+    $('.newsText').each(function () {
+        var content = $(this);
+        if(content.attr('data-dvused') == 1) {
+            if(content.attr('data-dvflag') == 2) {
+                page_by_tag(content, '<NEXTPAGE>');
+            } else if(content.attr('data-dvflag') == 1) {
+                page_by_number_of_words(content, content.attr('data-dvsize'));
+            }
+        }
+    });
+});
+
+/*
+ * 按字数对新闻内容进行分页
+ */
+function page_by_number_of_words(content, count) {
+    if(count < 100) return;
+
+}
+// 计算字符串的Unicode总长度 (一个汉字长度为1, 一个ASCII码字符长度为0.5)
+function uLength(s) {
+    var res = 0, code;
+    for(var i = 0, len = s.length; i < len; ++i) {
+        code = s.charCodeAt(i);
+        if(code >= 0 && code <= 128) {
+            res+=0.5;
+        } else {
+            ++res;
+        }
+    }
+    return res;
+}
+
+/*
+ * 按<NEXTPAGE>标记对新闻内容进行分页
+ */
+function page_by_tag(content, tag) {
+    // 找到所有分页元素
+    var dvs = [];
+    content.find(':contains('+tag+')').each(function () {
+        var dv = $(this);
+        while(!dv.parent().hasClass('newsText')) {
+            dv = dv.parent();
+        }
+        for(var i = 0, len = dvs.length; i < len; ++i) {
+            if(dv.get(0) === dvs[i].get(0))     // 去掉重复的分页元素
+                return;
+        }
+        dvs.push(dv);
+    });
+    // 对页面内容进行分页 ( 每页使用一个div包裹 )
+    var p, i, len;
+    for(i = 0, len = dvs.length; i < len; ++i) {
+        content.append('<div class="dv-page dv-page-'+i+'"></div>');
+        while((p = dvs[i].prev()).length && !p.hasClass('dv-page')) {
+            p.prependTo('.newsText div.dv-page:last');
+        }
+        dvs[i].remove();
+    }
+    content.append('<div class="dv-page dv-page-'+len+'"></div>');
+    content.children(':not(div.dv-page)').appendTo('.newsText div.dv-page:last');
+    // 添加页码
+    var pagination = $('<div class="dv-pagination clearfix"></div>').appendTo(content);
+    for(i = 0; i <= len; ++i) {
+        $('<a class="dv-link" href="#">'+(i+1)+'</a>').appendTo(pagination).click(function () {
+            // 切换页面
+            var index = $(this).index('.dv-link'), current = content.find('div.dv-page:eq('+index+')');
+            current.show();
+            current.siblings('div.dv-page').hide();
+            // 页码选中状态
+            $(this).addClass('current').siblings('.dv-link').removeClass('current');
+            // 自动高度
+            var view = $(this).closest('.view[id]');
+            view.length && diyAutoHeight && diyAutoHeight(view);
+            return false;
+        });
+    }
+    // 选中第一页
+    $('.dv-pagination .dv-link:first').trigger('click');
+}
+</script>
+<script language="javascript" src="//box6js.nicebox.cn/js/divipage.js"></script>
+<div class="LNewsCon modSet">
+	
+	<h2 class="newsBigTit titleSet" style="color:;font-weight:;">新闻标题</h2>
+	
+	<div class="smallC" style="position:relative;">
+	
+	
+	<font class="songti xinxi newsInfoSet">浏览：0</font>
+	
+	
+	<font class="songti xinxi newsInfoSet">作者：作者</font>
+	
+	
+	<font class="songti xinxi newsInfoSet">来源：</font>
+	
+	
+	
+        <font class="songti xinxi newsInfoSet">时间：0000-00-00</font>
+	
+	
+	
+	<font class="songti xinxi newsInfoSet">分类：</font>
+	
+	
+   </div>
+   
+   <div class="abstract songti detailSet">
+		新闻简介
+   </div>
+   
+   
+   <div id="newsInfo" class="newsText songti contSet" style="overflow:hidden;" data-dvused="0" data-dvflag="1" data-dvsize="0" data-dvstyle="0">
+		   
+   </div>
+   
+   
+   <div class="newsMoreA">
+	  <div class="backNews "><a href="javascript:;" class="backnewsSet">上一篇: 无</a></div>
+	  <div class="nextNews "><a href="javascript:;" style="text-align:right;" class="nextnewsSet">下一篇: 无</a></div>
+   </div>
+ 
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#content").mouseout(function(){
+		$(".btn1").removeAttr("disabled");
+	})
+	
+	$(".btn1").click(function(){
+		console.log("sssss");
+		if($('#content').val()==""){
+			$('.btn1').attr("disabled","true");
+			alert("评论区尚未填写内容");
+		}
+
+	})
+	
+})
+	
+</script>
+ <div style='clear:both'></div><script>
+				$(function(){
+					var viewid="newsDetail_style_01_1506318095542";
+					var sys_url="viewid=newsDetail_style_01_1506318095542&name=newsDetail&style=style_01&langid=0&pageid=2716715&viewCtrl=newsDetail&isfb=1";
+					var moreParams='';
+					if(typeof(history.pushState) != 'undefined'){
+						var hstate=JSON.stringify(history.state);
+						if(hstate!='null'&& hstate!=null){
+							eval('var hjson = ' + hstate);
+							moreParams=hjson.moreParamsnewsDetail_style_01_1506318095542;
+						}
+					}
+					RequestURL(viewid,sys_url,moreParams);
+				})
+			</script><script>
+$(function(){
+	$('title').html('新闻标题');
+			$('meta[name=KeyWords]').attr('content','新闻关键字');
+	        $('meta[name=description]').attr('content','新闻简介');
+    });
+</script>
+
+
+
+				</div>
+			</div>
+						</div>
+			</div>
+					<div id="layout_1506318122695" class="layout "  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div class="view_contents">
+									</div>
+			</div>
+					<div id="comm_layout_footer" class="layout  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div class="view_contents">
+								<div id="div_a_includeBlock_1562052732597" class="view a_includeBlock div  none includeView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="div" class="view_contents" >
+								<div id="image_style_01_1562052333954" class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="image" class="view_contents" >
+					<div class="imgStyle CompatibleImg">
+	
+		<a href='javascript:;' target="">
+	
+			<img class="picSet link-type-" src="img/upimages/pkgimg/20190702232221624.jpg" title="" alt="描述" id="imageModeShow"/>
+	
+		</a>
+	
+</div>
+
+
+
+
+
+
+<!-- 新加的js  -->
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562052425735" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					扫一扫<div>获得更多资讯</div>
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562051874381" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					网站导航
+
+
+
+
+				</div>
+			</div>
+					<div id="div_blank_new01_1562051881389" class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="div" class="view_contents" >
+					<div class="blank_new01">
+<div class="roundcs modSet" ></div>	
+</div>
+
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562051952435" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					<a href="2716707-2716707.html?pageid=2716707" target='' style='color:inherit' class='editor-view-extend link-type-1-'>景区介绍</a>
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562052122378" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					<a href="2716709-2716709.html?pageid=2716709" target='' style='color:inherit' class='editor-view-extend link-type-1-'>旅游攻略</a>
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562052162704" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					<a href="2716711-2716711.html?pageid=2716711" target='' style='color:inherit' class='editor-view-extend link-type-1-'>游记</a>
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562052182637" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					<a href="2716713-2716713.html?pageid=2716713" target='' style='color:inherit' class='editor-view-extend link-type-1-'>关于我们</a>
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562051540251" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					联系方式
+
+
+
+
+				</div>
+			</div>
+					<div id="div_blank_new01_1562051595230" class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="div" class="view_contents" >
+					<div class="blank_new01">
+<div class="roundcs modSet" ></div>	
+</div>
+
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562051657887" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					电话：400-1234-154897<div><div>手机：1302569****<div>邮箱：125@125.com<div>地址：北京市朝阳区XX街道274号</div><div><br></div><div><br><div><br><div><br></div></div></div></div></div></div>
+
+
+
+
+				</div>
+			</div>
+					<div id="image_style_01_1562051450049" class="view style_01 image  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="image" class="view_contents" >
+					<div class="imgStyle CompatibleImg">
+	
+		<a href='javascript:;' target="">
+	
+			<img class="picSet link-type-" src="img/upimages/pkgimg/20190702230720309.png" title="" alt="描述" id="imageModeShow"/>
+	
+		</a>
+	
+</div>
+
+
+
+
+
+
+<!-- 新加的js  -->
+
+
+
+
+				</div>
+			</div>
+					<div id="text_style_01_1562051485645" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					旅游服务公司成立于1997年,现旗下拥有xx嘉华文化
+国际旅行社、xx新闻旅行社、xx环球假日旅行社、x
+x嘉华通用航空公司，在新加坡、印尼、菲律宾、香
+港、越南、北京、大连以及烟台、青岛、潍坊等设
+有20余家分（子）公司，在全省设有近300家门店。
+业务范围涉及出境旅...
+
+
+
+
+				</div>
+			</div>
+						</div>
+			</div>
+					<div id="text_style_01_1562052860430" class="view style_01 text  none lockHeightView"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="text" class="view_contents" >
+					Copyright @ Company name All rights reserved
+
+
+
+
+				</div>
+			</div>
+					<div id="div_blank_new01_1562052821790" class="view blank_new01 div  none"  data-wow-duration='0s' data-wow-delay='0s' data-wow-offset='0' data-wow-iteration='1'>
+				<div names="div" class="view_contents" >
+					<div class="blank_new01">
+<div class="roundcs modSet" ></div>	
+</div>
+
+
+
+
+
+				</div>
+			</div>
+						</div>
+			</div>
+		<div class="bottomMenu 123"><ul><li style="height:100%;padding-top:2px;">
+							<a href="index.html" class="" style=""><div class="menuItem"><div class="menuIco"><img src="img/upimages/pkgimg/20190703134705583.png" alt=""></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#37bfff" ><div class="menuName" style="color:#666666;">首页</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})  
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="2716707-2716707.html" class="" style=""><div class="menuItem"><div class="menuIco"><img src="img/upimages/pkgimg/20190703134705506.png" alt=""></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#37bfff" ><div class="menuName" style="color:#666666;">景区介绍</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})  
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="2716709-2716709.html" class="" style=""><div class="menuItem"><div class="menuIco"><img src="img/upimages/pkgimg/201907031347058.png" alt=""></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#37bfff" ><div class="menuName" style="color:#666666;">旅游攻略</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})  
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="2716711-2716711.html" class="" style=""><div class="menuItem"><div class="menuIco"><img src="img/upimages/pkgimg/20190703134705878.png" alt=""></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#37bfff" ><div class="menuName" style="color:#666666;">游记</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})  
+           }
+        })
+        </script><li style="height:100%;padding-top:2px;">
+							<a href="2716713-2716713.html" class="" style=""><div class="menuItem"><div class="menuIco"><img src="img/upimages/pkgimg/20190703134705843.png" alt=""></div><input type="hidden" class="menuIcon" value="" ><input type="hidden" class="menuColor" value="#37bfff" ><div class="menuName" style="color:#666666;">关于我们</div></div></a>
+							<div class="submenuItems" style="display:none;"></div>
+						</li><script>
+
+        $(function() {
+           var lang = 0;
+           if (typeof(Default_isFT) !== 'undefined'){
+              if(lang == '0'){
+				lang = Default_isFT;
+				if(BodyIsFt == '0'){
+					lang = BodyIsFt;
+				}else if(BodyIsFt == '1'){
+					lang = BodyIsFt;
+				}
+			}
+			$('.bottomMenu a').each(function() {
+			  var hrefstr = $(this).attr('href');
+			  var laststr=hrefstr.substring(hrefstr.length-7);
+			  if (laststr == 'langid=') {
+			        hrefstr = hrefstr + lang;
+			    $(this).attr('href',hrefstr)
+			  }
+			})  
+           }
+        })
+        </script></ul></div>
+<script>
+$(function(){
+    $(".showSubMenu").click(function(){
+        $(this).next().toggle();
+		$(this).parent("li").siblings("li").children(".showSubMenu").next().css("display","none");
+    });
+    var bottomLen = $(".bottomMenu > ul > li > a").length;
+    var url = window.location.pathname;
+    var loc = url.substring(url.lastIndexOf("/")+1, url.length);
+    for(var i=0;i<bottomLen;i++){
+        var curObj = $(".bottomMenu ul li a").eq(i);
+        if(loc == curObj.attr("href")){
+            var img = curObj.children(".menuItem").children(".menuIco").children("img").attr("src");
+            var menuIcon = curObj.children(".menuItem").children(".menuIcon").val();
+            var menuColor = curObj.children(".menuItem").children(".menuColor").val();
+            var menuName = curObj.children(".menuItem").children(".menuName").html();
+            if(menuIcon != ""){
+                curObj.children(".menuItem").children(".menuIco").children("img").attr("src",menuIcon);
+            }
+            if(menuColor != ""){
+                curObj.children(".menuItem").children(".menuName").css("color",menuColor);
+            }
+        }
+    }
+});
+$(window).resize(function(){
+    if($("body").width()<640){
+        var bottomHeight = $(".bottomMenu").height();
+        $("body").css("padding-bottom",bottomHeight+"px");
+    }else{
+        $("body").css("padding-bottom","0px");
+    }
+});
+</script>
+<script>
+	$(function(){
+		sendBatch(batchArr);
+	});
+</script>
+
+<script type="text/javascript" src="//box6js.nicebox.cn/webapp/UserPanel/sh
